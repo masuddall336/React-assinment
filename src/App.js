@@ -9,7 +9,7 @@ function App() {
   let [player, setPlayer] = useState([]);
   useEffect(() => {
     setPlayers(fakeData);
-  })
+  },[])
   let handle = (players) =>{
     console.log("Clicked", players);
     let newPlayer = [...player, players];
